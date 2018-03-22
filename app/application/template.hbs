@@ -1,3 +1,9 @@
 <h1>Montrealists</h1>
 
+{{#each model as |post|}}
+  <p>{{link-to post.title 'post' post.id}}</p>
+{{else}}
+  <p>No posts</p>
+{{/each}}
+
 {{outlet}}
